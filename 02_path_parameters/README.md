@@ -49,7 +49,7 @@ uvicorn main:app --reload
 
 ---
 
-## 🔥 응용 실습 (advanced_path_parameters.py)
+## 응용 실습 (advanced_path_parameters.py)
 
 ### 추가한 기능
 - 가짜 DB(딕셔너리)를 활용한 실제 데이터 조회
