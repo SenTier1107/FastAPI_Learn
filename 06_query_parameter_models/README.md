@@ -48,3 +48,27 @@ uvicorn main:app --reload
 
 ## 자동 문서화
 - `/docs` → 쿼리 매개변수 모델의 각 필드 확인 가능
+
+---
+
+## 🔥 응용 실습 (advanced_param_models.py)
+
+### 추가한 기능
+- 상품 필터링 모델 (ProductFilter) 구현
+- 카테고리, 가격 범위 필터링
+- 정렬 기능 (created_at, price, name)
+- 페이지네이션 (limit, offset)
+
+### 실행 방법
+```bash
+uvicorn advanced_param_models:app --reload
+```
+
+### 테스트
+| URL | 결과 |
+|-----|------|
+| `/products/` | 전체 상품 반환 |
+| `/products/?category=electronics` | 전자제품만 필터링 |
+| `/products/?min_price=500000` | 50만원 이상 필터링 |
+| `/products/?order_by=price` | 가격순 정렬 |
+| `/products/?limit=2&offset=1` | 2개씩 페이지네이션 |

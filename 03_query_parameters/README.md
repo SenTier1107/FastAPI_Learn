@@ -46,3 +46,26 @@ uvicorn main:app --reload
 
 ## 자동 문서화
 - `/docs` → Swagger UI에서 직접 테스트 가능
+
+---
+
+## 🔥 응용 실습 (advanced_query_parameters.py)
+
+### 추가한 기능
+- 카테고리 필터링
+- 가격 범위 필터링 (min_price, max_price)
+- 페이지네이션 (skip, limit)
+- 키워드 검색 기능
+
+### 실행 방법
+```bash
+uvicorn advanced_query_parameters:app --reload
+```
+
+### 테스트
+| URL | 결과 |
+|-----|------|
+| `/items/` | 전체 목록 반환 |
+| `/items/?category=fruit` | 과일만 필터링 |
+| `/items/?min_price=600&max_price=1000` | 가격 범위 필터링 |
+| `/items/search/?q=apple` | 키워드 검색 |

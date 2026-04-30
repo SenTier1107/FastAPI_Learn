@@ -46,3 +46,27 @@ uvicorn main:app --reload
 
 ## 자동 문서화
 - `/docs` → Swagger UI에서 직접 테스트 가능
+
+---
+
+## 🔥 응용 실습 (advanced_path_parameters.py)
+
+### 추가한 기능
+- 가짜 DB(딕셔너리)를 활용한 실제 데이터 조회
+- 존재하지 않는 데이터 요청 시 오류 메시지 반환
+- 문자열 경로 매개변수로 상품 조회
+- 카테고리 + 상품 ID 동시 조회
+
+### 실행 방법
+```bash
+uvicorn advanced_path_parameters:app --reload
+```
+
+### 테스트
+| URL | 결과 |
+|-----|------|
+| `/users/1` | Alice 정보 반환 |
+| `/users/999` | 오류 메시지 반환 |
+| `/products/apple` | Apple 상품 반환 |
+| `/products/없는상품` | 오류 메시지 반환 |
+| `/categories/fruit/products/1` | 카테고리 + 상품 ID 반환 |

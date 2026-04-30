@@ -42,3 +42,28 @@ FastAPI는 함수 매개변수를 아래 규칙으로 자동 구분함
 
 ## 자동 문서화
 - `/docs` → Swagger UI에서 JSON 입력 폼 자동 생성
+
+---
+
+## 🔥 응용 실습 (advanced_request_body.py)
+
+### 추가한 기능
+- 가짜 DB를 활용한 실제 CRUD 구현
+- 상품 생성 (POST)
+- 상품 전체/단건 조회 (GET)
+- 상품 수정 (PUT)
+- 상품 삭제 (DELETE)
+
+### 실행 방법
+```bash
+uvicorn advanced_request_body:app --reload
+```
+
+### 테스트
+| 메소드 | URL | 설명 |
+|--------|-----|------|
+| POST | `/items/` | 상품 생성 |
+| GET | `/items/` | 전체 상품 조회 |
+| GET | `/items/1` | 1번 상품 조회 |
+| PUT | `/items/1` | 1번 상품 수정 |
+| DELETE | `/items/1` | 1번 상품 삭제 |
