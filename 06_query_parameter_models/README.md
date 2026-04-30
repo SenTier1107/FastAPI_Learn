@@ -51,7 +51,7 @@ uvicorn main:app --reload
 
 ---
 
-## 🔥 응용 실습 (advanced_param_models.py)
+## 응용 실습 (advanced_param_models.py)
 
 ### 추가한 기능
 - 상품 필터링 모델 (ProductFilter) 구현
