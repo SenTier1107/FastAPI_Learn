@@ -45,7 +45,7 @@ FastAPI는 함수 매개변수를 아래 규칙으로 자동 구분함
 
 ---
 
-## 🔥 응용 실습 (advanced_request_body.py)
+## 응용 실습 (advanced_request_body.py)
 
 ### 추가한 기능
 - 가짜 DB를 활용한 실제 CRUD 구현
