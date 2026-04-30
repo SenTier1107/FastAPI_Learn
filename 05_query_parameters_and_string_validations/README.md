@@ -54,7 +54,7 @@ uvicorn main:app --reload
 
 ---
 
-## 🔥 응용 실습 (advanced_request_body.py)
+## 응용 실습 (advanced_request_body.py)
 
 ### 추가한 기능
 - 가짜 DB를 활용한 실제 CRUD 구현
