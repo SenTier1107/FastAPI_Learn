@@ -49,7 +49,7 @@ uvicorn main:app --reload
 
 ---
 
-## 🔥 응용 실습 (advanced_query_parameters.py)
+## 응용 실습 (advanced_query_parameters.py)
 
 ### 추가한 기능
 - 카테고리 필터링
